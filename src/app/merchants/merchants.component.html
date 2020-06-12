@@ -1,5 +1,7 @@
 <h1>Merchants</h1>
 <ul class="list-unstyled" *ngFor="let merchant of merchants">
     <hr>
-    <li>{{ merchant.name }}<span> > </span></li>
+    <li>
+        <a [routerLink]="" (click)="showTransactions(merchant.merchant_id)">{{ merchant.name }}<span> > </span></a>
+    </li>
 </ul>
