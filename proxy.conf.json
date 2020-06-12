@@ -1,0 +1,7 @@
+{
+  "/api/*": {
+      "target": "13.107.246.10:443",
+      "secure": false,
+      "logLevel": "debug"
+  }
+}
