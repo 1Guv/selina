@@ -8,7 +8,6 @@ import { Observable } from 'rxjs';
 })
 export class MerchantsService {
 
-  // url: string = 'https://selinafinance-assets.azureedge.net/source/merchants.json';
   url: string = 'https://selinafinance-assets.azureedge.net/source/';
   headers: any
   merchantId: string;

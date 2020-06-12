@@ -30,18 +30,18 @@ export class MerchantsComponent implements OnInit {
 
   getAllMerchants() {
     this.merchantService.getMerchants()
-      .subscribe((data: MerchantsClass) => {
-        console.log('data', data);
-        this.merchants = data;
+      .subscribe((merchants: MerchantsClass) => {
+        console.log('merchants', merchants);
+        this.merchants = merchants;
       })
   }
 
   showTransactions(id: string) {
     console.group('id', id);
     this.merchantService.getMerchantByID(id)
-      .subscribe((data: any) => {
-        console.log('merchant by id', data);
-        this.merchant = data;
+      .subscribe((merchant: any) => {
+        console.log('merchant by id', merchant);
+        this.merchant = merchant;
       })
   }
 
